@@ -29,13 +29,13 @@ stages:
       size: 17205
     - path: train.py
       hash: md5
-      md5: 8a6c6c4ac7144aaf7c83b7e236792ad2
-      size: 532
+      md5: ef27b0f6641931d925ec2eee687ca26a
+      size: 539
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 9756364e657a4906d00f5b605e7a63a0
-      size: 1231
+      md5: cfb3ab56827220a3e27bf6cf57c530d3
+      size: 2389417
   validate:
     cmd: python validate.py
     deps:
@@ -45,8 +45,8 @@ stages:
       size: 4329
     - path: models/model.pkl
       hash: md5
-      md5: 9756364e657a4906d00f5b605e7a63a0
-      size: 1231
+      md5: cfb3ab56827220a3e27bf6cf57c530d3
+      size: 2389417
     - path: validate.py
       hash: md5
       md5: f513f23e0603ff5f5cd3e1744c990229
@@ -54,9 +54,9 @@ stages:
     outs:
     - path: confusion_matrix.png
       hash: md5
-      md5: 7fa1258f60a897f0ad61e707ac2d8db9
-      size: 10008
+      md5: d84cdd79ee66f172b4bd07cb7cc5e6de
+      size: 9872
     - path: metrics.json
       hash: md5
-      md5: c62d4eacef2486dd52930e61bb226b34
-      size: 144
+      md5: 73c14bd9d612c2702d0c6118f479bae8
+      size: 133
